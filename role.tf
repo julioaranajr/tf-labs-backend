@@ -1,4 +1,4 @@
-
+# Create a AWS IAM GitHub Role
 resource "aws_iam_openid_connect_provider" "default" {
   url = "https://token.actions.githubusercontent.com"
 
@@ -36,4 +36,4 @@ resource "aws_iam_role" "github_actions" {
 resource "aws_iam_role_policy_attachment" "github_actions_atch" {
     role = aws_iam_role.github_actions.name
     policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
-}
+  }
