@@ -1,6 +1,6 @@
 # RESOURCE "RESOURCE_TYPE" "RESOURCE_NAME"
 resource "aws_s3_bucket" "ta_backend_bucket" {
-  bucket = "ta-vpc-terraform-tfstates-342055123193"
+  bucket = "ta-cicd-terraform-tfstates-342055123193"
 
   # META-DATA
   lifecycle {
@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "ta_backend_bucket" {
   }
 
   tags = {
-    Name        = "ta-vpc-terraform-tfstates-342055123193"
+    Name        = "ta-cicd-terraform-tfstates-342055123193"
     Environment = "Test"
     Team        = "Talent-Academy"
     Owner       = "Julio-Arana-Jr"
